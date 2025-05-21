@@ -6,8 +6,9 @@ This repository provides a single-area load frequency control environment simula
 2. With Integral secondary control
 
 # How to run the simulator
-Clone the repository to your local device. Open in terminal and run python main.py
+Clone the repository to your local device. \n
+Open in terminal and run python main.py
 
 # Parameter tuning
-Change attributes in config.py file
+Change attributes in config.py file. \n
 Edit disturbance in main.py file
