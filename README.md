@@ -34,18 +34,6 @@ Load disturbances can be applied independently to each area.
 
 ---
 
-##  How to Run
-
-Each folder is self-contained.
-
-Example:
-
-```bash
-cd simulator_PIDController
-python main.py
-
----
-
 ##  Output
 
 Each simulation produces time-series plots including:
@@ -56,6 +44,7 @@ Each simulation produces time-series plots including:
 - Control signal output
 - Tie-line power (in 2-area system)
 
+---
 
 ##  Folder Structure
 
@@ -73,11 +62,28 @@ Each folder contains:
 - disturbance.py
 - plot_utils.py
 
+---
 
 ##   License & Contributions
 
 This project is open-source and available under the MIT License.
 Feel free to fork, modify, and contribute!
+
+---
+
+##  How to Run
+
+Each folder is self-contained.
+
+Example:
+
+```bash
+cd simulator_PIDController
+python main.py
+
+---
+
+
 
 
 
