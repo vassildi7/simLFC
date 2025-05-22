@@ -45,7 +45,7 @@ cd simulator_PIDController
 python main.py
 
 
-## Output
+##  Output
 
 Each simulation produces time-series plots including:
 
@@ -56,7 +56,7 @@ Each simulation produces time-series plots including:
 - Tie-line power (in 2-area system)
 
 
-## Folder Structure
+##  Folder Structure
 
 simulator_PrimaryControl/
 simulator_IntegralController/
@@ -73,7 +73,7 @@ Each folder contains:
 - plot_utils.py
 
 
-##  License & Contributions
+##   License & Contributions
 
 This project is open-source and available under the MIT License.
 Feel free to fork, modify, and contribute!
