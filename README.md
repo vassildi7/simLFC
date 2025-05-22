@@ -1,21 +1,45 @@
-# simLFC
+# Load Frequency Control (LFC) Simulators
 
-This repository provides a single-area load frequency control system simulator integrated in Python:
+This repository contains four modular Python simulators for Load Frequency Control (LFC) systems using different control strategies. All simulators use fixed-step ODE4 (Runge-Kutta 4th order) integration and are organized into separate folders for clarity.
 
-1. Only with primary control (simulator_PrimaryOnly)
-2. With Integral secondary control (simulator_IntegralController)
-3. With PID secondary control (simulator_PIDController)
+---
 
-There is also a two-area load frequency control system simulator integrated in Python:
+## Included Simulators
 
-4. With PID secondary control in each area (simulator_2area_PID)
+### 1. `simulator_PrimaryControl/`  
+**Single-area LFC** with only **primary control (droop response)**.  
+No secondary (AGC) or PID controller is used.
 
+### 2. `simulator_IntegralController/`  
+**Single-area LFC** with a simple **integral controller (AGC)**.  
+This helps eliminate steady-state error after load disturbances.
 
-# How to run the simulator
-1. Clone the repository folder corresponding to the simulator you want to your local device.
-2. Open in terminal and run python main.py
+### 3. `simulator_PIDController/`  
+**Single-area LFC** using a full **PID controller** for faster, more stable responses.  
+All PID terms (P, I, D) are tunable in `config.py`.
 
-# Parameter tuning
-1. Change system attributes in config.py file.
-2. Tune controller in config.py file
-3. Edit disturbance in main.py file
+### 4. `simulator_2area_PID/`  
+**Two-area LFC** system with inter-area tie-line and separate **PID controllers for each area**.  
+Load disturbances can be applied independently to each area.
+
+---
+
+##  Features
+
+- RK4-based numerical integration
+- Customizable load disturbances (step-based)
+- Modular controllers and system dynamics
+- Separate plotting for each signal (Δf, ΔPm, ΔPload, ΔPtie, control)
+- Easily adjustable controller gains in `config.py`
+
+---
+
+##  How to Run
+
+Each folder is self-contained.
+
+Example:
+
+```bash
+cd simulator_PIDController
+python main.py
