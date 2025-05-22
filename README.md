@@ -43,3 +43,41 @@ Example:
 ```bash
 cd simulator_PIDController
 python main.py
+
+
+## Output
+
+Each simulation produces time-series plots including:
+
+- Frequency deviations (Δf)
+- Load disturbances (ΔPload)
+- Mechanical power (ΔPm)
+- Control signal output
+- Tie-line power (in 2-area system)
+
+
+## Folder Structure
+
+simulator_PrimaryControl/
+simulator_IntegralController/
+simulator_PIDController/
+simulator_2area_PID/
+
+Each folder contains:
+
+- main.py (entry point)
+- config.py (parameters & gains)
+- controller.py or controller_pid.py
+- system_model.py
+- disturbance.py
+- plot_utils.py
+
+
+##  License & Contributions
+
+This project is open-source and available under the MIT License.
+Feel free to fork, modify, and contribute!
+
+
+
+
