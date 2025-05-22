@@ -1,10 +1,15 @@
 # simLFC
 
-This repository provides a single-area load frequency control environment simulator integrated in Python:
+This repository provides a single-area load frequency control system simulator integrated in Python:
 
-1. Only with primary control
-2. With Integral secondary control
-3. With PID secondary control
+1. Only with primary control (simulator_PrimaryOnly)
+2. With Integral secondary control (simulator_IntegralController)
+3. With PID secondary control (simulator_PIDController)
+
+There is also a two-area load frequency control system simulator integrated in Python:
+
+4. With PID secondary control in each area (simulator_2area_PID)
+
 
 # How to run the simulator
 1. Clone the repository folder corresponding to the simulator you want to your local device.
