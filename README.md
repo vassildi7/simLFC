@@ -71,6 +71,22 @@ Feel free to fork, modify, and contribute!
 
 ---
 
+##  Research Context
+
+This simulator collection is part of an ongoing research project on cyber-resilient control in power systems. It serves as a foundational tool for evaluating classical control strategies prior to the deployment of advanced AI-based solutions.
+
+Specifically, this work is a **natural continuation of the research presented in the paper**:
+
+**DRL²FC: An Attack-Resilient Controller for Load Frequency Control Based on Reinforcement Learning**  
+(*PowerTech 2025, IEEE*)  
+[arXiv:2404.16974](https://arxiv.org/abs/2404.16974)
+
+In that work, a Double DQN-based reinforcement learning agent replaces the conventional AGC in a two-area LFC system and maintains frequency stability even under false data injection attacks (FDIAs). 
+
+The simulators in this repository provide classical PID-based baselines and testbeds to validate and benchmark the performance of the DRL²FC framework. They are designed for transparency, reproducibility, and as a stepping stone for researchers moving from classical to AI-based LFC solutions.
+
+---
+
 ##  How to Run
 
 Each folder is self-contained.
@@ -81,7 +97,7 @@ Example:
 cd simulator_PIDController
 python main.py
 
----
+
 
 
 
