@@ -48,10 +48,14 @@ Each simulation produces time-series plots including:
 
 ##  Folder Structure
 
-simulator_PrimaryControl/n
-simulator_IntegralController/n
-simulator_PIDController/n
-simulator_2area_PID/n
+simulator_PrimaryControl/ 
+
+simulator_IntegralController/
+
+simulator_PIDController/
+
+simulator_2area_PID/
+
 
 Each folder contains:
 
